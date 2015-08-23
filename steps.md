@@ -29,11 +29,11 @@
 
 ## Board setup
 
-* Spiral setup
+* Setup spiral board
 * Bag of tiles
 * Numbers
 
 # Interlude: Showcase
 
 * Web
-* Desktop (fx or qt)
+* Desktop (fx or qt or gtk3)

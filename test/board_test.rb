@@ -7,9 +7,10 @@ class BoardTest < MiniTest::Test
     board = Board.new
     assert_equal 0, board.size
   end
+  
   def test_set_tile
     board = Board.new
-    coords = Coords::Cube.new(x: 0, y: -1, z: 1)
+    coords = Coords::Cube.new(0, -1, 1)
     board[coords] = Tile.new(type: :lumber, number: 3)
 
     assert_equal 3, board[coords].number
