@@ -18,16 +18,22 @@
 ## A Tile has representations
 
 * Human readable (to_s)
-* Short for file storage (serialize)
+* Short for easy file storage (serialize or to_json)
 
 # Board
 
 ## Board and Tiles
 
-* A Board has Tiles
+* A Cube coordinates has 3 axis (x,y,z) with a sum of 0
+* A Tile can be set and retrieved on a Board given a Cube coordinates
 
-## Hexagons
+## Board setup
 
-* A Board use Cube coordinates
-* A Board is saved in even-r coordinates
-* A Board is loaded from even-r coordinates
+* Spiral setup
+* Bag of tiles
+* Numbers
+
+# Interlude: Showcase
+
+* Web
+* Desktop (fx or qt)
