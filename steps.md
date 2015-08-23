@@ -7,4 +7,10 @@
 
 ## A Tile has a valid type (brick, ore, lumber, wool, grain)
 
-* Throw ArgumentError if not correct
+* Throw an ArgumentError if the provided type is not correct
+
+## A Tile has a number
+
+* An integer between 2 and 12
+* Also set from the start
+* Maybe a good time to use keyword attributes
