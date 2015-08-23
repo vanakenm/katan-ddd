@@ -35,4 +35,21 @@ class TileTest < MiniTest::Test
       tile = Tile.new(type: :brick, number: 13)
     end
   end
+
+  def test_to_s
+    tile = Tile.new(type: :brick, number: 11)
+    assert_match /11/, tile.to_s
+    assert_match /Brick/, tile.to_s
+  end
+
+  def test_serialize
+    tile = Tile.new(type: :brick, number: 11)
+    assert_equal "brick:11", tile.serialize
+  end
+
+  def test_deserialize
+    tile = Tile.deserialize("brick:11")
+    assert_equal :brick, tile.type
+    assert_equal 11, tile.number
+  end
 end
